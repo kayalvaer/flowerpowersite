@@ -1,0 +1,30 @@
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+    margin: 50px 20px;
+    padding: 13px;
+}
+
+.content {
+    flex: 2;
+    font-weight: 300;
+    padding: 25px;
+}
+
+.img {
+    flex: 1;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content {
+        margin: 50px;
+        margin-bottom: 20px;
+    }
+}

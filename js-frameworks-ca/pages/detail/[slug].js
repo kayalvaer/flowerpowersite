@@ -8,9 +8,9 @@ export default function ProductInfo() {
 
     return (
         <Layout>
-            <h1>Product Info</h1>
+            <h1>Product Details</h1>
             <h3>{router.query.slug}</h3>
-            <button onClick={() => router.push('/')} >Click me</button>
+            <button className='plainBtn' onClick={() => router.push('/')} >Go back home</button>
     
 
         </Layout>

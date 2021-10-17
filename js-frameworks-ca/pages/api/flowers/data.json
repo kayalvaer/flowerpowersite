@@ -1,0 +1,57 @@
+{
+    "flowers": [{
+            "id": "1",
+            "name": "Flower One",
+            "slug": "Flower One",
+            "date": "June 09, 2021",
+            "time": "10:00 PM EST",
+            "description": "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok.",
+            "image": "/images/roses.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Flower Two",
+            "slug": "Flower Two",
+            "date": "Jan 09, 2021",
+            "time": "11:00 PM EST",
+            "description": "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok.",
+            "image": "/images/proteas.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Flower Three",
+            "slug": "Flower Three",
+            "date": "June 09, 2021",
+            "time": "10:00 PM EST",
+            "description": "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok.",
+            "image": "/images/bouquets.jpg"
+        },
+        {
+            "id": "4",
+            "name": "Flower Four",
+            "slug": "Flower Four",
+            "date": "Feb 09, 2021",
+            "time": "20:00 PM EST",
+            "description": "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok.",
+            "image": "/images/pexels-daria-shevtsova-709792 copy.jpg"
+        },
+        {
+            "id": "5",
+            "name": "Flower Five",
+            "slug": "Flower Five",
+            "date": "July 09, 2021",
+            "time": "10:00 PM EST",
+            "description": "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok.",
+            "image": "/images/herbs.jpg"
+        },
+        {
+            "id": "6",
+            "name": "Flower Six",
+            "slug": "Flower Six",
+            "date": "March 09, 2021",
+            "time": "10:00 PM EST",
+            "description": "Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien. Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet, da en ukjent boktrykker stokket en mengde bokstaver for å lage et prøveeksemplar av en bok.",
+            "image": "/images/summer-sensation.jpg"
+        }
+    ]
+}

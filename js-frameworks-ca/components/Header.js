@@ -13,8 +13,18 @@ export default function Heading() {
             <nav>
                 <ul>
                     <li>
-                        <Link href='/admin'>
-                            <a>Manage</a>
+                        <Link href='/'>
+                            <a>Home</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='/contact'>
+                            <a>Contact</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='/login'>
+                            <a>Log In</a>
                         </Link>
                     </li>
                 </ul>

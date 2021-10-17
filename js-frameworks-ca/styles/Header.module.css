@@ -1,5 +1,6 @@
 .logo {
     font-size: 20px;
+    font-weight: 700;
     text-transform: uppercase;
     color: #333;
 }
@@ -16,6 +17,8 @@
     color: #333;
     padding: 0 30px;
     border: 2px;
+    font-weight: bolder;
+    letter-spacing: 0.15rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 4rem;
     font-family: 'Krub', sans-serif;
@@ -26,6 +29,7 @@
     align-items: center;
     justify-content: center;
     list-style: none;
+    font-weight: 600;
 }
 
 .header a {
