@@ -1,4 +1,4 @@
-import styles from '../styles/Header.module.css'
+import styles from '@/styles/Header.module.css'
 import Link from "next/link";
 
 export default function Heading() {
@@ -13,13 +13,12 @@ export default function Heading() {
             <nav>
                 <ul>
                     <li>
-                        <Link href='/flowers'>
-                            <a>Flower list</a>
+                        <Link href='/admin'>
+                            <a>Manage</a>
                         </Link>
                     </li>
                 </ul>
             </nav>
-
             
         </header>
     )
