@@ -1,7 +1,9 @@
+import Layout from '../components/Layout'
+
 export default function AdminDashboard() {
     return (
-        <div>
-            <h1>Admin Dashboard</h1>            
-        </div>
+        <Layout title='Manage Flower Products'>
+            <h1>Admin Dashboard</h1>
+        </Layout>
     )
 }

@@ -1,0 +1,13 @@
+.footer {
+    text-align: center;
+    margin: 100px 0 40px;
+}
+
+.footer p {
+    color: #8b008b;
+    margin: 5px 0;
+}
+
+.footer h5 {
+    font-weight: 300;
+}
