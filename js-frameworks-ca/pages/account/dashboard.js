@@ -1,14 +1,32 @@
 import {parseCookies} from '@/helpers/index'
+import { useRouter } from 'next/router'
 import Layout from '@/components/Layout'
 import DashboardFlower from '@/components/DashboardFlower'
 import { API_URL } from '@/config/index'
 import styles from '@/styles/Dashboard.module.css'
 
-export default function AdminDashboard({ flowers }) {
-    const deleteFlower = (id) => {
-        console.log(id)
-    }
-    
+export default function AdminDashboard({ flowers, token }) {
+    const router = useRouter()
+
+    const deleteFlower = async (id) => {
+        if(confirm('Are you sure of deleting?')) {
+          const res = await fetch(`${API_URL}/flowers/${id}`, {
+            method: 'DELETE',
+            headers: {
+                Authorization: `Bearer ${token}`
+            }
+          });
+  
+          const data = await res.json()
+  
+          if (!res.ok) {
+            toast.error(data.message)
+          } else {
+            router.push('/flowers') 
+          }
+        }
+      }
+
     return (
         <Layout title='Admin Dashboard'>
             <div className={styles.dash}>
@@ -40,6 +58,7 @@ export async function getServerSideProps({ req }) {
     return {
         props: {
             flowers,
+            token
         },
     }
   } 

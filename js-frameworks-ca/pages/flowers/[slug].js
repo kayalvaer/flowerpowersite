@@ -4,45 +4,17 @@ import {FaPencilAlt, FaTimes} from 'react-icons/fa'
 import Link from 'next/link'
 import Image from 'next/image'
 import Layout from "@/components/Layout"
+import EditorMap from "@/components/EditorMap"
 import { API_URL } from '@/config/index'
 import styles from '@/styles/Detail.module.css'
 import { useRouter } from 'next/router'
 
 export default function FlowerDetails({ flur }) {
     const router = useRouter()
-
-    const deleteFlower = async (e) => {
-      if(confirm('Are you sure of deleting?')) {
-        const res = await fetch(`${API_URL}/flowers/${flur.id}`, {
-          method: 'DELETE',
-        });
-
-        const data = await res.json()
-
-        if (!res.ok) {
-          toast.error(data.message)
-        } else {
-          router.push('/flowers') 
-        }
-      }
-    }
   
     return (
     <Layout>
           <div className={styles.detail}>
-              <div className={styles.controls}>
-                <Link href={`/flowers/edit/${flur.id}`}>
-                    <a>
-                       <FaPencilAlt />
-                       Edit  
-                    </a>
-                </Link>
-                <a href="#" className={styles.delete}
-                    onClick={deleteFlower}>
-                    <FaTimes />
-                    Delete
-                </a>
-              </div>
               <h1>{flur.name}</h1>
               <ToastContainer />
               {flur.image && (
@@ -62,6 +34,9 @@ export default function FlowerDetails({ flur }) {
                 <p>{flur.location}</p>
               <h3>Description: </h3>
                 <p>{flur.description}</p>
+
+              <EditorMap  flur={flur} />
+
               <Link href='/flowers'>
                   <a className={styles.back}>
                   {'<'} Go back

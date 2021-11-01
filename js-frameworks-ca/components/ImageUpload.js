@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { API_URL } from '@/config/index'
 import styles from '@/styles/Add.module.css'
 
-export default function ImageUpload({flurId, imageUploaded}) {
+export default function ImageUpload({flurId, imageUploaded, token}) {
     const [image, setImage] = useState(null)
 
     const handleSubmit = async (e) => {
@@ -15,6 +15,9 @@ export default function ImageUpload({flurId, imageUploaded}) {
     
         const res = await fetch(`${API_URL}/upload`, {
           method: 'POST',
+          headers: {
+            Authorization: `Bearer ${token}`
+          },
           body: formData,
         })
     

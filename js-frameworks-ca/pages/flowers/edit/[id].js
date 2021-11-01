@@ -184,6 +184,7 @@ export default function EditFlowerPage({flur, token}) {
                     <ImageUpload 
                         flurId={flur.id} 
                         imageUpLoaded={imageUploaded}
+                        token={token}
                     />
               </Modal>
         </Layout>
@@ -199,7 +200,7 @@ export async function getServerSideProps({params: {id}, req }) {
     return {
         props: {
             flur,
-            token
-        }
+            token,
+        },
     }
 }
