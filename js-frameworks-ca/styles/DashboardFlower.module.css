@@ -1,0 +1,28 @@
+.flower {
+    padding: 10px;
+    margin: 0 25px 10px 0;
+    border-radius: 5px;
+    border: 1px #ddd solid;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flower h4 {
+    margin-bottom: 10px;
+    flex: 2;
+}
+
+.edit,
+.delete {
+    margin: 10px;
+}
+
+.delete {
+    color: red;
+}
+
+.icon {
+    margin-left: 5px;
+}

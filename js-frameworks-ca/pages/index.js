@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"
 import Layout from "@/components/Layout"
 import FlowerItem from '@/components/FlowerItem'
 import { API_URL } from '@/config/index'
@@ -15,8 +15,8 @@ export default function Home({ flowers} ) {
       ))}
 
       {flowers.length > 0 && (
-        <Link href='/detail'>
-          <a className='btn-primary'>View More Flowers</a>
+        <Link href='/flowers'>
+          <a className='moreBtn'>. . . . . . . View More</a>
         </Link>
       )}
       
@@ -25,11 +25,11 @@ export default function Home({ flowers} ) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/api/flowers`)
+  const res = await fetch(`${API_URL}/flowers?_sort=date:ASC&_limit=3`)
   const flowers = await res.json()
 
   return {
-    props: { flowers: flowers.slice(0, 3) },
+    props: { flowers },
     revalidate: 1,
   }
 }

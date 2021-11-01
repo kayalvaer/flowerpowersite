@@ -13,7 +13,7 @@ export default function ErrorPage() {
                 </h1>
                 <p>404</p>
                 <h4>Oops, sorry the page is not rendered</h4>
-                <Link href='/'>Go back to Home Page</Link>
+                <Link href='/'>{'<'}Go back to Home Page</Link>
             </div>
         </Layout>
     )

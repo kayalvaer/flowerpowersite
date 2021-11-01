@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className={styles.footer}>
             <h5>Copyright &copy; Kay Alvær</h5>
             <p>
-                <Link href='/flowers/index.js'>
+                <Link href='/'>
                     Flowers say a lot about us !
                 </Link>
             </p>

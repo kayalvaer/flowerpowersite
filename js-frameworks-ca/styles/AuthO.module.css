@@ -1,0 +1,44 @@
+.authO {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0px 10px 20px 0px rgba(50, 50, 50, 0.52);
+    background-color: #c2c0b6;
+}
+
+.authO label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.authO input[type='text'],
+.authO input[type='email'],
+.authO input[type='password'] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.authO input[type='submit'] {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 17px;
+}
+
+.authO div {
+    margin-bottom: 20px;
+}
+
+.noAccount {
+    bottom: 3rem;
+}
+
+.authTitle {
+    text-align: center;
+}
+
+.linkAuth {
+    color: #8b008b !important;
+}

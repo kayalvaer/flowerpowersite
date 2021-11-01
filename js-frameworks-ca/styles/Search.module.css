@@ -1,0 +1,30 @@
+.search {
+    width: 180px;
+    height: 40px;
+    position: relative;
+    color: rgba(184, 184, 187, 0.589);
+}
+
+.search input[type='text'] {
+    padding: 1rem !important;
+    position: absolute;
+    bottom: 0.28px;
+    width: 180px;
+    height: 35px;
+    border-radius: 10px;
+    border: 0.3px rgba(218, 218, 223, 0.205) solid;
+}
+
+@media (max-width: 600px) {
+    .search input[type='text'] {
+        width: 260px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    .search {
+        width: 260px;
+        margin-bottom: 20px;
+    }
+}

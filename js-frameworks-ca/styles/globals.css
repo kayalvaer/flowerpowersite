@@ -4,7 +4,6 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1;
-    font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -16,13 +15,14 @@ a {
     box-sizing: border-box;
 }
 
-p {
+
+/* p {
     margin: 10px 0;
 }
 
 h1 {
     margin-bottom: 10px;
-}
+} */
 
 .btn {
     display: inline-block;
@@ -31,10 +31,34 @@ h1 {
     padding: 10px 20px;
     border: 0;
     border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.moreBtn {
+    color: #520442;
+    padding: 10px 20px;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: #520442;
+    color: #bdb9b9;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .btn:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .btn-icon {
@@ -55,18 +79,61 @@ h1 {
     background-color: #fff !important;
 }
 
+.btn-nav {
+    border: none;
+    font-size: 15px;
+    list-style: none;
+    color: #8b008b !important;
+    list-style: none;
+    background-color: rgba(183, 182, 175, 0) !important;
+}
+
 .btn-primary {
+    display: inline-block;
     background: #520442;
-    color: #fff !important;
+    color: #bdb9b9;
     border: 0;
     border-radius: 4px;
     padding: 15px 15px;
-    margin: 0 20px;
+    margin: 50px 0px;
     cursor: pointer;
     font: inherit;
     font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .btn-primary:hover {
     opacity: 0.8;
+}
+
+.btn-page {
+    display: inline-block;
+    color: #520442;
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 50px 0px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.arrowPrev {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.arrowNext {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.mainContainer {
+    background-color: #e5ddc0;
 }
