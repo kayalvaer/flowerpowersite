@@ -2,9 +2,9 @@ import { useState } from 'react'
 import { API_URL } from '@/config/index'
 import styles from '@/styles/Add.module.css'
 
-export default function ImageUpload({flurId, imageUploaded, token}) {
-    const [image, setImage] = useState(null)
-
+export default function ImageUpload({flurId, imageUploaded, token, showModal}) {
+    const [image, setImage] = useState(null);
+    console.log(imageUploaded, flurId, showModal, token);
     const handleSubmit = async (e) => {
         e.preventDefault()
         const formData = new FormData()
@@ -22,7 +22,7 @@ export default function ImageUpload({flurId, imageUploaded, token}) {
         })
     
         if (res.ok) {
-          imageUploaded()
+          await imageUploaded()
         }
       }
 

@@ -181,9 +181,9 @@ export default function EditFlowerPage({flur, token}) {
               </div>
 
               <Modal show={showModal} onClose={() => setShowModal(false)}>
-                    <ImageUpload 
+                    <ImageUpload
                         flurId={flur.id} 
-                        imageUpLoaded={imageUploaded}
+                        imageUploaded={imageUploaded}
                         token={token}
                     />
               </Modal>
