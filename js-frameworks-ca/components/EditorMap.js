@@ -17,8 +17,9 @@ export default function EditorMap({ flur }) {
     });
 
     useEffect(() => {
+        console.log('my +++', flur, process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY)
         // Get latitude & longitude from address.
-        Geocode.fromAddress(flur.address).then(
+        Geocode.fromAddress(flur.location).then(
             (response) => {
               const { lat, lng } = response.results[0].geometry.location
               setLat(lat)
@@ -36,6 +37,8 @@ export default function EditorMap({ flur }) {
 
     if (loading) return false
 
+    console.log(lat, lng, process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY)
+
     return (
         <ReactMapGl
           {...viewport}
@@ -43,7 +46,11 @@ export default function EditorMap({ flur }) {
           onViewportChange={(vp) => setViewport(vp)}
         >
           <Marker key={flur.id} latitude={lat} longitude={lng}>
-            <Image src='/images/pin.svg' width={30} height={30} />
+            <Image 
+                src='/images/pin.png' 
+                width={30} 
+                height={30} 
+            />
           </Marker>
         </ReactMapGl>
       )

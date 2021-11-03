@@ -22,7 +22,7 @@ export default function FlowerDetails({ flur }) {
                     <Image 
                       src={flur.image.formats.medium.url} 
                       width={960}
-                      height={600}
+                      height={650}
                     />
                   </div>
               )}
@@ -30,10 +30,11 @@ export default function FlowerDetails({ flur }) {
               {new Date(flur.date).toLocaleDateString
                     ('en-US')} at {flur.time}
               </span>
-              <h3>Location: </h3>
-                <p>{flur.location}</p>
               <h3>Description: </h3>
                 <p>{flur.description}</p>
+              <h3>Editor Location: </h3>
+                <p>{flur.location}</p>
+              
 
               <EditorMap  flur={flur} />
 
@@ -47,29 +48,40 @@ export default function FlowerDetails({ flur }) {
   )
 }
 
-export async function getStaticPaths() {
-    const res = await fetch(`${API_URL}/flowers`)
-    const flowers = await res.json()
+//export async function getStaticPaths() {
+//    const res = await fetch(`${API_URL}/flowers`)
+//    const flowers = await res.json()
 
-    const paths = flowers.map(flur => ({
-        params: {slug: flur.slug}
-    }))
+//    const paths = flowers.map(flur => ({
+//        params: {slug: flur.slug}
+//    }))
     
-    return {
-        paths,
-        fallback: true
-    }
-}
+//    return {
+//        paths,
+//        fallback: true
+//    }
+//}
 
-export async function getStaticProps({ params: 
-    { slug } }) {
-  const res = await fetch(`${API_URL}/flowers?slug=${slug}`)
-  const flowers = await res.json();
+//export async function getStaticProps({ params: 
+//    { slug } }) {
+//  const res = await fetch(`${API_URL}/flowers?slug=${slug}`)
+//  const flowers = await res.json();
   
+//  return {
+//    props: {
+//      flur: flowers[0]
+//    },
+//    revalidate: 1
+//  }
+//}
+
+export async function getServerSideProps({ query: { slug } }) {
+  const res = await fetch(`${API_URL}/flowers?slug=${slug}`)
+  const flowers = await res.json()
+
   return {
     props: {
-      flur: flowers[0]
+      flur: flowers[0],
     },
-    revalidate: 1
   }
 }
