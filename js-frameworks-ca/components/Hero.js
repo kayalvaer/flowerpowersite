@@ -10,7 +10,7 @@ export default function Hero() {
                     talk with you.
                 </h3>
                 <p className={styles.link}>
-                        <Link href={`/flowers/login`}>
+                        <Link href={`//account/login`}>
                             <a className='btn'>Join us</a>
                         </Link>
                     </p>
