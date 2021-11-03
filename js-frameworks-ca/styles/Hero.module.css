@@ -22,20 +22,21 @@
 }
 
 .hero h1 {
-    font-size: 50px;
+    font-size: 4rem;
     margin-bottom: 0;
 }
 
 .hero h3 {
     color: #8b008b;
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 @media (min-width: 600px) {
     .heroContent {
-        width: 15rem;
+        width: 45rem;
+        padding-top: 3.8rem;
         position: absolute;
-        margin-right: 300px;
+        margin-right: 50px;
         text-align: left;
     }
 }
