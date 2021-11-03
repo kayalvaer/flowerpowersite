@@ -21,8 +21,8 @@ export default function FlowerDetails({ flur }) {
                   <div className={styles.image}>
                     <Image 
                       src={flur.image.formats.medium.url} 
-                      width={400}
-                      height={330}
+                      width={960}
+                      height={600}
                     />
                   </div>
               )}
