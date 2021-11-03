@@ -10,7 +10,7 @@ export default function Hero() {
                     talk with you.
                 </h3>
                 <p className={styles.link}>
-                        <Link href={`//account/login`}>
+                        <Link href="https://flowerpowersite.vercel.app/account/login">
                             <a className='btn'>Join us</a>
                         </Link>
                     </p>
