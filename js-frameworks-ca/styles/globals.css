@@ -39,8 +39,8 @@ h1 {
 .btnHero {
     display: inline-block;
     background: #8b008b;
-    color: #939393;
-    padding: 20px 30px;
+    color: #fff !;
+    padding: 10px 30px;
     border: 0;
     border-radius: 5px;
     font-size: 20px;
