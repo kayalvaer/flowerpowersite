@@ -31,9 +31,13 @@
     font-size: 1.5rem;
 }
 
+.heroContent {
+    width: 45rem;
+}
+
 @media (min-width: 600px) {
     .heroContent {
-        width: 45rem;
+        width: 15rem;
         padding-top: 3.8rem;
         position: absolute;
         margin-right: 50px;
