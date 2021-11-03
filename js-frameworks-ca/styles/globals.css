@@ -36,6 +36,18 @@ h1 {
     text-transform: uppercase;
 }
 
+.btnHero {
+    display: inline-block;
+    background: #8b008b;
+    color: #939393;
+    padding: 20px 30px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 .moreBtn {
     color: #520442;
     padding: 10px 20px;

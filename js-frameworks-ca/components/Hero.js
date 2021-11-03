@@ -12,7 +12,7 @@ export default function Hero() {
                 </h3>
                 <p className={styles.link}>
                         <Link href="/account/register">
-                            <a className='btn'>Join us</a>
+                            <a className='btnHero'>Join us</a>
                         </Link>
                     </p>
             </div>
