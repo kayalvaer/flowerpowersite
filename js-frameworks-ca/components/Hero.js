@@ -9,11 +9,6 @@ export default function Hero() {
                     Embrace the feelings with the power of flowers. Let them 
                     talk with you.
                 </h3>
-                <p className={styles.link}>
-                        <Link href="#">
-                            <a className='btn'>Join us</a>
-                        </Link>
-                    </p>
             </div>
         </div>
     )
