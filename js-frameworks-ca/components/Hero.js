@@ -11,7 +11,7 @@ export default function Hero() {
                     talk with you.
                 </h3>
                 <p className={styles.link}>
-                        <Link href="/account/register">
+                        <Link href="pages/account/register">
                             <a className='btnHero'>Join us</a>
                         </Link>
                     </p>
