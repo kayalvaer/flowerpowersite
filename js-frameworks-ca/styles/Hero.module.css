@@ -27,8 +27,12 @@
 }
 
 .hero h3 {
-    color: #8b008b;
-    font-size: 1.5rem;
+    margin: 0;
+    font-size: 5.5em;
+    margin-top: -0.6em;
+    color: white;
+    text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+    transform: rotate(-7deg);
 }
 
 .contentAnimate {
@@ -36,6 +40,9 @@
 }
 
 @keyframes textanimate {
+    0% {
+        transform: translateX(0%)
+    }
     100% {
         transform: translateX(50%)
     }
