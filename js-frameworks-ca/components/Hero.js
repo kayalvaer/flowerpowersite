@@ -16,7 +16,7 @@ export default function Hero() {
                         <Link href="pages/account/register">
                             <a className='btnHero'>Join us</a>
                         </Link>
-                    </p>
+                </p>
             </div>
         </div>
     )
