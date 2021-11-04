@@ -28,6 +28,7 @@
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 0;
+    -webkit-text-stroke-color: #1b0218;
 }
 
 .hero h3 {
