@@ -32,12 +32,12 @@
 }
 
 .contentAnimate {
-    animation: textanimate 1s ease-in;
+    animation: textanimate 1s ease-out;
 }
 
 @keyframes textanimate {
     100% {
-        transform: translateX(100%)
+        transform: translateX(50%)
     }
 }
 
