@@ -31,6 +31,16 @@
     font-size: 1.5rem;
 }
 
+.contentAnimate {
+    animation: textanimate 1s ease-in;
+}
+
+@keyframes textanimate {
+    100% {
+        transform: translateX(100%)
+    }
+}
+
 @media (min-width: 600px) {
     .heroContent {
         padding-top: 1.5rem;
