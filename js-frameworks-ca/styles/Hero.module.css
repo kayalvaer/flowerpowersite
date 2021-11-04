@@ -7,7 +7,7 @@
     height: 500px;
     width: 100%;
     background: url('../public/images/hero.jpg');
-    background-color: linear-gradient(rgba(71, 69, 69, 0.541), rgba(255, 255, 255, 0.888));
+    background-color: linear-gradient( rgba(255, 255, 255, 0.888), rgba(71, 69, 69, 0.541));
     background-position: 0 0;
     background-repeat: repeat-x;
     -webkit-animation: moveHero 20s linear infinite;
@@ -28,10 +28,6 @@
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 0;
-    transform: translateY(120px);
-    animation: animatetext 1s linear forwards;
-    z-index: 1;
-    -webkit-text-stroke: 1px #000;
 }
 
 .hero h3 {
@@ -42,10 +38,12 @@
     width: 600px;
 }
 
-
-/* .contentAnimate {
-    animation: textanimate 1s ease-out;
-} */
+.contentAnimate {
+    transform: translateY(120px);
+    animation: animatetext 1s linear forwards;
+    z-index: 1;
+    -webkit-text-stroke: 1px #000;
+}
 
 @keyframes animatetext {
     100% {
