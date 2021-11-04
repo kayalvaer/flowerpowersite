@@ -28,6 +28,10 @@
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 0;
+    transform: translateY(120px);
+    animation: animatetext 1s linear forwards;
+    z-index: 1;
+    -webkit-text-stroke: 1px #000;
 }
 
 .hero h3 {
@@ -43,12 +47,9 @@
     animation: textanimate 1s ease-out;
 } */
 
-@keyframes textanimate {
-    0% {
-        transform: translateX(0%)
-    }
+@keyframes animatetext {
     100% {
-        transform: translateX(50%)
+        transform: translateY(0)
     }
 }
 
