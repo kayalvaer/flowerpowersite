@@ -20,7 +20,7 @@ export default function Layout({title, keywords,
             <Header />
             {router.pathname === '/' && <Hero />}
 
-            <div className={styles.wrap}>
+            <div className={styles.container}>
                 {children}
             </div>
             <Footer />
