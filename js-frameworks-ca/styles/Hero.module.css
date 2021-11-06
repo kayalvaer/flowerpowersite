@@ -62,28 +62,18 @@
     }
 }
 
-
-/* .heroContent {
+.heroContent {
     position: absolute;
     transform: translateY(120px);
     animation: animatetext 1s linear forwards;
     z-index: 1;
-} */
-
-@media (min-width: 600px) {
-    .heroContent {
-        padding-top: 1.5rem;
-        position: absolute;
-        text-align: left;
-    }
 }
 
-
-/* @media (min-width: 600px) {
+@media (min-width: 600px) {
     .heroContent {
         padding-top: 1.5rem;
         position: absolute;
         margin-right: 80px;
         text-align: left;
     }
-} */
+}
