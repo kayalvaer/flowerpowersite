@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: 2px 2px 5px rgba(167, 11, 162, 0.1);
-    margin: 1rem;
+    margin: 2rem;
     text-align: left;
     color: inherit;
     transition: color 0.15s ease, border-color 0.15s ease;
