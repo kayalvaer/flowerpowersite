@@ -28,7 +28,7 @@
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 0;
-    -webkit-text-stroke: #1b0218;
+    -webkit-text-stroke: #4f454e;
 }
 
 .hero h3 {
@@ -47,6 +47,9 @@
 }
 
 @keyframes animatetext {
+    50% {
+        transform: translateY(0)
+    }
     100% {
         transform: translateY(0)
     }
