@@ -15,7 +15,8 @@
     animation: moveHero 20s linear infinite;
 } */
 
-.hero {
+
+/* .hero {
     height: 500px;
     width: 100%;
     background: url('../public/images/hero.jpg') no-repeat center center;
@@ -30,6 +31,15 @@
     background-repeat: repeat-x;
     -webkit-animation: moveHero 20s linear infinite;
     animation: moveHero 20s linear infinite;
+} */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    text-align: left;
+    color: inherit;
 }
 
 .hero::after {
@@ -88,7 +98,8 @@
     z-index: 1;
 }
 
-@media (min-width: 600px) {
+
+/* @media (min-width: 600px) {
     .heroContent {
         padding-top: 1.5rem;
         position: absolute;
@@ -98,4 +109,4 @@
     .hero {
         background-size: cover;
     }
-}
+} */
