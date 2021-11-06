@@ -40,13 +40,12 @@
     width: 600px;
 }
 
-
-/* .contentAnimate {
+.contentAnimate {
     transform: translateY(120px);
     animation: animatetext 1s linear forwards;
     z-index: 1;
     -webkit-text-stroke: 1px #000;
-} */
+}
 
 @keyframes animatetext {
     100% {
