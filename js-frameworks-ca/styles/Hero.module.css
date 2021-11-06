@@ -18,7 +18,7 @@
 .hero {
     height: 300px;
     width: 100%;
-    background: #403d40 url('../public/images/hero.jpg') no-repeat center center;
+    background: url('../public/images/hero.jpg') no-repeat center center;
     color: #fff;
     position: relative;
     display: flex;
