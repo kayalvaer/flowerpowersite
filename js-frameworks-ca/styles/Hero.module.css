@@ -19,7 +19,7 @@
     height: 500px;
     width: 100%;
     background: url('../public/images/hero.jpg') no-repeat center center;
-    color: #fff;
+    color: #877f10;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -94,5 +94,9 @@
         position: absolute;
         margin-right: 80px;
         text-align: left;
+    }
+    .hero {
+        background-size: cover;
+        margin: 0;
     }
 }
