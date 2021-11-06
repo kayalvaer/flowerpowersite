@@ -13,6 +13,7 @@
     animation: moveHero 20s linear infinite;
     color: #877f10;
     position: relative;
+    background-size: cover;
 }
 
 .hero::after {
