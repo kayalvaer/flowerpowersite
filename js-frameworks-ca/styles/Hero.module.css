@@ -57,6 +57,10 @@
     background-image: linear-gradient(rgba(71, 69, 69, 0.541), rgba(255, 255, 255, 0.888));
 }
 
+.hero * {
+    z-index: 20;
+}
+
 
 /* .hero * {
     z-index: 20;
