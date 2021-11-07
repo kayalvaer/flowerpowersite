@@ -64,47 +64,7 @@
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 0;
-    -webkit-text-stroke: #4f454e;
-}
-
-.hero h3 {
-    margin: 0;
-    font-size: 1.5em;
-    font-style: italic;
-    color: #403d40;
-    width: 600px;
-}
-
-.contentAnimate {
-    transform: translateY(120px);
-    animation: animatetext 1s linear forwards;
-    z-index: 1;
-    -webkit-text-stroke: 1px #403d40;
-}
-
-@keyframes animatetext {
-    50% {
-        transform: translateY(0)
-    }
-    100% {
-        transform: translateY(0)
-    }
-}
-
-@keyframes moveHero {
-    from {
-        background-position: 0 0;
-    }
-    to {
-        background-position: 100% 0;
-    }
-}
-
-.heroContent {
-    position: absolute;
-    transform: translateY(120px);
-    animation: animatetext 1s linear forwards;
-    z-index: 1;
+    /* -webkit-text-stroke: #4f454e; */
 }
 
 
