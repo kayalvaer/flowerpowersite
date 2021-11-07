@@ -1,0 +1,13 @@
+.subscribe {
+    text-align: center;
+    margin: 100px 0 40px;
+}
+
+.subscribe p {
+    color: #8b008b;
+    margin: 5px 0;
+}
+
+.subscribe h2 {
+    font-weight: 600;
+}

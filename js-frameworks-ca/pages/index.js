@@ -19,6 +19,7 @@ export default function Home({ flowers} ) {
           <a className='moreBtn'>. . . . . . . View More</a>
         </Link>
       )}
+      <Subscribe />
       
     </Layout>
   )
