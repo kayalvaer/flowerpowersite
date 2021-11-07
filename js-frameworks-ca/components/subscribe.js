@@ -1,7 +1,7 @@
 import styles from '@/styles/Subscribe.module.css'
 import Link from "next/link";
 
-export default function Footer() {
+export default function Subscribe() {
     return (
         <div className={styles.subscribe}>
             <h2>Our flowers seems like a great idea for you</h2>
