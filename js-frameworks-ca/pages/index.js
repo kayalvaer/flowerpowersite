@@ -2,7 +2,6 @@ import Link from "next/link"
 import Layout from "@/components/Layout"
 import FlowerItem from '@/components/FlowerItem'
 import { API_URL } from '@/config/index'
-import Subscribe from '@/components/Subscribe'
 
 export default function Home({ flowers} ) {
   //console.log(flowers)
@@ -20,7 +19,6 @@ export default function Home({ flowers} ) {
           <a className='moreBtn'>. . . . . . . View More</a>
         </Link>
       )}
-      <Subscribe />
       
     </Layout>
   )
