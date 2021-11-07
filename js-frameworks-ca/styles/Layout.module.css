@@ -11,6 +11,7 @@
     margin: 60px auto;
     max-width: 960px;
     padding: 0 30px;
+    outline: red 10px;
 }
 
 .main {
