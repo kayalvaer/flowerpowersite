@@ -15,6 +15,7 @@ export default function FlowerItem({ flur }) {
                     } 
                     width={400}
                     height={400}
+                    alt="flower images"
                     />
                     <p className={styles.date}>
                         {new Date(flur.date).toLocaleDateString
