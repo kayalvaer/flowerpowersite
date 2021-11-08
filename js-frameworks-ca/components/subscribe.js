@@ -11,7 +11,7 @@ export default function Subscribe() {
                 experiences about flowers. Why not join them!
             </h5>
             <p className={styles.link}>
-                <Link href="pages/account/register">
+                <Link href="pages/account/login">
                             <a className='btnHero'>Join us</a>
                 </Link>
             </p>
