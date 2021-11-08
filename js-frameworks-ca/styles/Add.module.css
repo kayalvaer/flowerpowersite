@@ -27,7 +27,6 @@
     border: 1px #ccc solid;
     background-color: #fafafa;
     padding: 10px;
-    margin-left: 10px;
 }
 
 .label {
@@ -49,5 +48,11 @@
     .grid {
         grid-template-columns: 1fr;
         bottom: -20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .image {
+        margin-left: 20px;
     }
 }

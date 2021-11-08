@@ -159,7 +159,7 @@ export default function EditFlowerPage({flur, token}) {
                 <div className={styles.image}>
                     <Image 
                         src={imagePreview} 
-                        width={300}
+                        width={250}
                         height={250}
                     />
                 </div>
