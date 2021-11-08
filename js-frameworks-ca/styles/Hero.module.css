@@ -32,6 +32,15 @@
     animation: moveHero 20s linear infinite;
 }
 
+@keyframes moveHero {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
 
 /* .hero {
     display: flex;
