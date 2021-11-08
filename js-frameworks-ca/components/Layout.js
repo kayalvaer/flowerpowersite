@@ -4,7 +4,6 @@ import Header from './Header'
 import Footer from './Footer'
 import Hero from './Hero'
 import styles from '@/styles/Layout.module.css'
-import Subscribe from './Subscribe'
 
 export default function Layout({title, keywords, 
     description, children}) { 
