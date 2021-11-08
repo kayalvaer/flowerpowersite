@@ -24,8 +24,9 @@ export default function Home({ flowers} ) {
   )
 }
 
+
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/flowers?_sort=date:ASC&_limit=3`)
+  const res = await fetch(`${API_URL}/flowers?_sort=date:ASC&_limit=2`)
   const flowers = await res.json()
 
   return {
