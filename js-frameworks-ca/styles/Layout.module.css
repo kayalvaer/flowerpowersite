@@ -122,4 +122,8 @@
         width: 100%;
         flex-direction: column;
     }
+    .wrap {
+        max-width: 960px;
+        margin-left: 2rem;
+    }
 }
