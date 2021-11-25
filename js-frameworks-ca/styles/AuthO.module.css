@@ -6,6 +6,12 @@
     background-color: #c2c0b6;
 }
 
+@media (max-width: 600px) {
+    .authO {
+        margin-right: 2rem;
+    }
+}
+
 .authO label {
     display: block;
     margin-bottom: 10px;
